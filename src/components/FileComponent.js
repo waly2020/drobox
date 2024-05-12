@@ -1,6 +1,6 @@
 import React from 'react';
 import ButtonIcon from './ButtonIcon';
-import { MdDeleteForever } from "react-icons/md";
+// import { MdDeleteForever } from "react-icons/md";
 import { FaDownload } from "react-icons/fa6";
 
 /**
@@ -9,23 +9,23 @@ import { FaDownload } from "react-icons/fa6";
  * @returns 
  */
 const FileComponent = ({files}) => {
+    // publicUrl
+    console.log(files.Key.split(".").pop());
     return (
-        <div className='border-b-2 py-2 grid grid-cols-[50px,1fr,1fr] gap-3 relative'>
+        <div className='relative w-full max-w-[300px] grid gap-4 grid-rows-[1fr_50px] p-2 border rounded'>
             
-            <div className='flex justify-center items-center'>
-                <img className='w-full' src={`/files/${files.extension}.png`} alt={files.name}/>
-            </div>
-            <div>
-                <p>{files.extension}</p>
-                <p>{files.date}</p>
+            <div className='w-full h-[200px]'>
+                <img className='w-full h-full object-cover rounded' src={`${files.publicUrl}`} alt="uploaded"/>
             </div>
             <div className="flex justify-end gap-3 rounded text-white relative group">
-            <ButtonIcon className="bg-blue-700 rounded">
-                    <FaDownload/>
-                </ButtonIcon>
-                <ButtonIcon className="bg-red-700 rounded">
+            <a href={`${files.publicUrl}`} download={true} className='inline-block w-full h-full'>
+            <ButtonIcon icon={<FaDownload/>} className="bg-blue-700 rounded w-full">
+                    download
+            </ButtonIcon>
+            </a>
+                {/* <ButtonIcon className="bg-red-700 rounded">
                     <MdDeleteForever/>
-                </ButtonIcon>
+                </ButtonIcon> */}
             </div>
         </div>
     );

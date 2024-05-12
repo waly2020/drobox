@@ -6,18 +6,13 @@ export const userSlice = createSlice({
     initialState : JSON.parse(window.localStorage.getItem("user")),
     reducers : {
         login : (state,action)=>{
-            // state = action.payload;
-            // console.log("Heloooooooooo");
-            // logDatas(action.payload,"utilisateur recu");
-            window.localStorage.setItem("user",JSON.stringify(action.payload));
-            return JSON.parse(window.localStorage.getItem("user"));
+            return action.payload;
         },
         register : (state,action) =>{
             state = action.payload;
             return state;
         },
         logout : () =>{
-            window.localStorage.removeItem("user");
             return null;
         }
     }

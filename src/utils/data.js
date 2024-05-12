@@ -7,6 +7,11 @@ export const DATAS = [
     {
         name : "chessure rose",
         date : "Mon. 18 Feb 2023",
+        extension : "jpg"
+    },
+    {
+        name : "chessure rose",
+        date : "Mon. 18 Feb 2023",
         extension : "css"
     },
     {

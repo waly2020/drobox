@@ -1,0 +1,10 @@
+{
+  "resourceName": "dynamoac9026a2",
+  "tableName": "dynamoac9026a2",
+  "partitionKey": {
+    "fieldName": "files",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
