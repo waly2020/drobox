@@ -1,8 +1,6 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "mydropbox_identitypool_03b2541f",
-    "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "mydrop03b2541f",
     "userPoolName": "mydropbox_userpool_03b2541f",
     "autoVerifiedAttributes": [
@@ -18,22 +16,24 @@
     "emailVerificationMessage": "Your verification code is {####}",
     "defaultPasswordPolicy": false,
     "passwordPolicyMinLength": 8,
-    "passwordPolicyCharacters": [
-      "Requires Lowercase",
-      "Requires Numbers",
-      "Requires Uppercase"
-    ],
+    "passwordPolicyCharacters": [],
     "requiredAttributes": [
       "email"
     ],
     "aliasAttributes": [],
     "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
-    "userpoolClientWriteAttributes": [],
-    "userpoolClientReadAttributes": [],
+    "userpoolClientWriteAttributes": [
+      "name",
+      "email"
+    ],
+    "userpoolClientReadAttributes": [
+      "email",
+      "name"
+    ],
     "userpoolClientLambdaRole": "mydrop03b2541f_userpoolclient_lambda_role",
-    "userpoolClientSetAttributes": false,
-    "authSelections": "identityPoolAndUserPool",
+    "userpoolClientSetAttributes": true,
+    "authSelections": "userPoolOnly",
     "resourceName": "mydropbox",
     "sharedId": "03b2541f",
     "serviceName": "Cognito",
@@ -55,8 +55,13 @@
     "userPoolGroups": false,
     "userPoolGroupList": [],
     "adminQueries": false,
-    "thirdPartyAuth": false,
+    "hostedUI": false,
+    "useEnabledMfas": true,
+    "triggers": {},
     "authProviders": [],
-    "hostedUI": false
+    "parentStack": {
+      "Ref": "AWS::StackId"
+    },
+    "permissions": []
   }
 }

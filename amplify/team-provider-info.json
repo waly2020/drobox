@@ -20,10 +20,49 @@
         "mydropbox9dd6cc66": {
           "deploymentBucketName": "amplify-mydropbox-dev-99b74-deployment",
           "s3Key": "amplify-builds/mydropbox9dd6cc66-444e46382b326279455a-build.zip"
-        }
+        },
+        "dynamoac9026a2": {}
       },
       "storage": {
         "dynamoac9026a2": {}
+      },
+      "api": {
+        "apiacc93f02": {}
+      }
+    }
+  },
+  "drobox": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mydropbox-drobox-dee48-authRole",
+      "UnauthRoleArn": "arn:aws:iam::471112876267:role/amplify-mydropbox-drobox-dee48-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::471112876267:role/amplify-mydropbox-drobox-dee48-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-mydropbox-drobox-dee48-deployment",
+      "UnauthRoleName": "amplify-mydropbox-drobox-dee48-unauthRole",
+      "StackName": "amplify-mydropbox-drobox-dee48",
+      "StackId": "arn:aws:cloudformation:eu-north-1:471112876267:stack/amplify-mydropbox-drobox-dee48/eca09150-1b34-11ef-83ca-0689e4deb86b",
+      "AmplifyAppId": "d107gyxqjbm4kc",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-mydropbox-drobox-dee48-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "mydropbox": {}
+      },
+      "function": {
+        "mydropbox9dd6cc66": {
+          "deploymentBucketName": "amplify-mydropbox-drobox-dee48-deployment",
+          "s3Key": "amplify-builds/mydropbox9dd6cc66-444e46382b326279455a-build.zip"
+        },
+        "dynamoac9026a2": {}
+      },
+      "api": {
+        "apiacc93f02": {}
+      },
+      "storage": {
+        "dynamoac9026a2": {}
+      },
+      "hosting": {
+        "S3AndCloudFront": {}
       }
     }
   }

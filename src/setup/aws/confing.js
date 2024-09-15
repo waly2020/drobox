@@ -1,6 +1,6 @@
 export const awsConfig = {
-    accessKeyId : "AKIAW3MEEADV26J2FNRE",
-    secretAccessKey : "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",
+    accessKeyId : "AKIAW3MEEADVUNIDZ6VO",
+    secretAccessKey : "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",
     bucketName : "drobox-db",
     dirName : "media",
     region : "eu-north-1",
