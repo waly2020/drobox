@@ -8,36 +8,36 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Launches the application in development mode.
+Open http://localhost:3000 to see it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload automatically when you change the code.
+You can also see lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Starts the test launcher in interactive monitoring mode.
+For more information, see the section on running tests.[running tests](https://facebook.github.io/create-react-app/docs/running-tests)
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Compile the application for production in the build folder.
+It generates a bundle of React optimized for production and makes it the most efficient possible.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The bundle is minified, and filenames include hashes.
+Your application is ready for deployment!
+
+See the Deployment section for details.
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Note: this operation is irreversible. Once eject is executed, it is impossible to go back!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If the default configuration choices are not suitable for you, you can choose to run eject at any time. This command copies all configuration files (Webpack, Babel, ESLint, etc.) directly into your project so you can edit them. All commands, except eject, will continue to work, but they will now point to copied scripts, allowing you to customize them freely.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+There is no need to use eject. The default configuration is suitable for small or medium-sized deployments, but if you need more control, this option is available.
 
 ## Learn More
 
